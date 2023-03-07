@@ -1,0 +1,269 @@
+
+:root {
+    --vermelho: #FF7979;
+    --verde: #38CC8B;
+    --azul: #5E54A4;
+    --branco: #FFFF;
+}
+
+html,
+body {
+    width: 98%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    background-color: var(--vermelho);
+    background-image: url('./img/bg-intro-desktop.png');
+    font-family: "Poppins";
+}
+
+.container_botao {
+    color: rgb(255, 255, 255);
+    background-color: var(--azul);
+    border-radius: 10px;
+    border: none;
+    padding: 1em;
+    display: block;
+    margin-bottom: 40px;
+    margin-top: 200px;
+    cursor: pointer;
+    width: 540px;
+    height: 60px;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    font-family: "Poppins";
+    font-size: 15px;
+    font-style: normal;
+}
+
+.main__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+}
+
+.card {
+    padding: 5%;
+    margin: 2%;
+}
+
+
+.titulo {
+    font-weight: 700;
+    font-size: 50px;
+    color: #FFFFFF;
+    margin-bottom: 0.3em;
+    margin-top: 2em;
+    line-height: 1.2em;
+}
+
+.descricao {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--branco);
+    line-height: 2;
+    padding-inline: 7px;
+    
+}
+
+.formulario_card {
+    width: 540px;
+    height: 474px;
+    margin-bottom: 121px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+}
+
+.info_card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input_form {
+    width: 460px;
+    height: 56px;
+    border-radius: 4px;
+    border: 1px solid #DEDEDE !important;
+    margin-top: 20px;
+    padding-left: 32px;
+    font-family: "Poppins";
+}
+
+.input_form::placeholder {
+    font-size: 14px;
+    font-weight: 700;
+    color: #3D3B48;
+    font-family: "Poppins";
+}
+
+.formulario_botao {
+    font-family: "Poppins";
+    color: var(--branco);
+    background-color: #38CC8B;
+    border-radius: 5px;
+    border: none;
+    width: 475px;
+    height: 56px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+}
+
+.rodape__form {
+    text-align: center;
+    color: #BAB7D4;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.rodape__form__cor {
+    color: #FF7979;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+    .main__section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-top: 400px;
+        width: 375px;
+    }
+
+
+    .titulo {
+        font-size: 28px;
+        margin-top: 88px;
+        line-height: 36px;
+    }
+
+    .descricao {
+        font-size: 14px;
+        line-height: 26px;
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+
+    .container_botao {
+        margin-bottom: 24px;
+        width: 327px;
+        height: 88px;
+        font-size: 15px;
+        line-height: 26px;
+        letter-spacing: 0.27px;
+        padding-inline: 66px;
+        margin-top: 30px;
+        
+
+    }
+
+    .formulario_card {
+        width: 327px;
+        height: 442px;
+        margin-bottom: 68px;
+        ;
+    }
+
+    .input_form {
+        width: 260px;
+        height: 56px;
+        margin-top: 16px;
+        padding-left: 24px;
+    }
+
+    .formulario_botao {
+        width: 279px;
+        height: 56px;
+        margin-top: 16px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .rodape__form {
+        font-size: 11px;
+        line-height: 21px;
+        margin-top: 8px;
+        text-align: center;
+        padding-inline: 39px;
+
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .main__section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 320px;
+        padding-inline: 24px;
+        }
+
+        .titulo {
+            font-size: 28px;
+            margin-top: 88px;
+            line-height: 36px;
+        }
+        .descricao {
+            font-size: 14px;
+            line-height: 26px;
+            margin-top: 16px;
+            margin-bottom: 24px;
+        }
+    
+        .container_botao {
+            margin-bottom: 24px;
+            width: 327px;
+            height: 88px;
+            font-size: 15px;
+            line-height: 26px;
+            letter-spacing: 0.27px;
+            padding-inline: 66px;
+    
+        }
+    
+        .formulario_card {
+            width: 327px;
+            height: 442px;
+            margin-bottom: 68px;
+        }
+    
+        .input_form {
+            width: 260px;
+            height: 56px;
+            margin-top: 16px;
+            padding-left: 24px;
+        }
+    
+        .formulario_botao {
+            width: 279px;
+            height: 56px;
+            margin-top: 16px;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+    
+        .rodape__form {
+            font-size: 11px;
+            line-height: 21px;
+            margin-top: 8px;
+            text-align: center;
+            padding-inline: 39px;
+    
+        }
+    }
+
